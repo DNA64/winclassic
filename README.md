@@ -120,3 +120,14 @@ Now when you launch Windows 3.11 from your home menu you should boot right into 
 
 The End.. or is it? 
 More exciting things to follow! ;)
+
+# Troubleshooting
+
+ - If you get a `himem.sys` missing error make sure that `xms=true` in your `dosbox.conf` file.
+
+ - If you get the message *"ERROR: Cannot install the 386 enhanced mode 
+expanded-memory driver."* then set `ems=false`
+
+# Uninstalling Windows
+
+Uninstalling Windows is as simple as removing a game from your system, simply uncheck it in H2CE and then sync with the system.
