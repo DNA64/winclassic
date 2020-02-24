@@ -51,7 +51,7 @@ For best results mount a folder instead of an .img (More on that below). You'll 
 You can use it to extract the setup files you'll need from the Windows 3.11 installation disk images.
 
 
-**Step 1**
+## Step 1
 
 Drag and drop the `CLV-O-HNUZA.zip` package onto Hakchi2 CE, then right-click on the newly added `Microsoft Windows 3.11` 
 app in the list and click `Show in Windows Explorer` or press F4.
@@ -60,7 +60,7 @@ This will open a new window, copy the appropriate `dosbox.conf` file you downloa
 
 Once the transfer has completed you can close the window and sync the changes to your system using H2CE (Make sure the app has a checkmark so it's sync'd to the system).
 
-**Step 2**
+## Step 2
 
 Now before we continue you'll need to connect a Keyboard and Mouse to your system, you can do this using a Micro USB OTG adapter as mentioned above.
 
@@ -74,7 +74,7 @@ Scroll down this list till you see `Hotkeys`. By default this is set to nul (- -
 You can now close RA by pressing `B`,`B` then selecting the `Main Menu` from the options to the left where at the bottom of the list on the right is the option `X Quit RetroArch`. Now if all went well, when we type in the next step you won't end up messing with all the Hotkey functions.
 
 
-**Step 3**
+## Step 3
 
 Launch Windows 3.11 again and if all goes well the setup process should begin!
 
@@ -89,7 +89,7 @@ If you get the following message, make sure you've downloaded the correct `dosbo
     available here: https://github.com/dna64/winclassic
 
 
-**Step 4**
+## Step 4
 
 Welcome to Setup.
 Press `ENTER` to continue the setup process. Press `ENTER` again to use the express setup. Wait for setup to finish copying files.
@@ -103,7 +103,7 @@ Windows will populate the program folders and then ask if you want to run a shor
 Setup is now complete!
 Since Reboot isn't supported at this point, select the option to exit back to MS-DOS then type `exit` and press `ENTER` to return to RetroArch.
 
-**Step 5**
+## Step 5
 
 We're almost done, we just need to replace the `dosbox.conf` file.
     
