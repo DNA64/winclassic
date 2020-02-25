@@ -28,6 +28,7 @@ Next, if you haven't already you'll need to download and install RetroArch as we
 
 
 **Required Files:**
+
 Download the following files from my github page here: https://github.com/DNA64/winclassic
 - CLV-O-HNUZA.zip
 - dosbox.conf
@@ -46,11 +47,13 @@ You'll also need a copy of Windows 3.x, Obviously for legal reasons I cannot lin
 You do NOT require DOS for this guide.
 
 **DO NOT USE THE .IMG FILES!**
+
 For best results mount a folder instead of an .img (More on that below). You'll run into less errors. Checkout the Free [ImDisk Toolkit](https://sourceforge.net/projects/imdisk-toolkit) software. This is a fantastic tool that will let you mount HDD and floppy image files with ease. 
 
 You can use it to extract the setup files you'll need from the Windows 3.x installation disk images.
 
 **ATTENTION!!!**
+
 *When un-installing windows you MUST use the un-installation guide below. Hakchi2 CE isn't capable of uninstalling Windows and although the icon will disappear and you won't see the files, they will remain on the system taking up space!*
 
 
@@ -157,6 +160,7 @@ You may now un-install Windows through H2CE as you would any game/app, by un-che
 Windows is now fully and properly un-installed! 
 
 **Please Note:**
+
 At this point, it's recommended you right click on Windows in the H2CE list and delete it.
 
 You may leave it if you like, however, in order to install windows again, you will need to add the Windows Setup files to the INSTALL folder again (NAND users only) and the appropriate `dosbox.conf` file from the github repo, essentially following the guide above again (You can skip Step 2).
