@@ -94,6 +94,8 @@ If you get the following message, make sure you've downloaded the correct `dosbo
     file for your system, region and configuration (USB or NAND),
     available here: https://github.com/dna64/winclassic
 
+For any other errors, please see the [troubleshooting section](https://github.com/DNA64/winclassic#troubleshooting) below..
+
 
 ## Step 4
 
@@ -128,6 +130,12 @@ The End.. or is it?
 More exciting things to follow! ;)
 
 # Troubleshooting
+
+- If the Windows setup doesn't start automatically in Step 3 simply type `setup` at the command prompt and press enter.
+
+>     c:\setup
+
+- If after Step 5, Windows doesn't automatically boot when launched and leaves you at the command prompt, simply type `win` and press ENTER.
 
  - If you get a `himem.sys` missing error make sure that `xms=true` in your `dosbox.conf` file.
 
