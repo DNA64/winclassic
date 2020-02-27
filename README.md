@@ -142,6 +142,28 @@ More exciting things to follow! ;)
  - If you get the message *"ERROR: Cannot install the 386 enhanced mode 
 expanded-memory driver."* then set `ems=false`
 
+- Windows setup shows I'm installing Windows 3.1 but I'm using Windows 3.11 disks. What gives?
+
+> The changes between 3.1 & 3.11 were so minor that a lot of the version
+> information wasn't updated.
+
+- Hakchi2 CE errors when transferring files?
+If you happen to run into this issue just FTP the files to the system.
+
+- Where is the Windows directory located?
+
+> The Windows directory is only visible when Windows (or DOSBox) is
+> running on the system. Uninstalling DOSBox will not delete the Windows installation.
+
+You should be able to find it at the directory below (varies based on region):
+
+    var/lib/hakchi/games/snes-usa/.storage/CLV-O-HNUZA/WINDOWS/
+
+- When I sync the system using Hakchi2 CE my files aren't updated?
+
+> This drove me crazy when I was testing things. I found transferring
+>  files over ftp more reliable.
+
 
 # Uninstalling Windows
 
@@ -159,13 +181,18 @@ Sync the changes to the system.
 
 ## Step 3.
 
-Launch Windows. The screen will go black for a few seconds before returning you to RetroArch. Quit RA (Press B, UP, A to exit RA).
+Launch Windows. The un-install script will run and remove the Windows folder.
 
 ## Step 4.
 
 You may now un-install Windows through H2CE as you would any game/app, by un-checking the box next to it and syncing with your system.
 
 Windows is now fully and properly un-installed! 
+There may still be some files left behind that H2CE wasn't able to remove, to be sure, ftp into the system and check the following directory. If found, remove it.
+
+> var/lib/hakchi/games/snes-usa/.storage/CLV-O-HNUZA/
+
+I will create a module to automate all of this soon.
 
 **Please Note:**
 
