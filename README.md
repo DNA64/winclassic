@@ -152,12 +152,13 @@ If you happen to run into this issue just FTP the files to the system.
 
 - Where is the Windows directory located?
 
-> The Windows directory is only visible when Windows (or DOSBox) is
+> The Windows directory may only be visible when Windows (or DOSBox) is
 > running on the system. Uninstalling DOSBox will not delete the Windows installation.
 
-You should be able to find it at the directory below (varies based on region):
+You should be able to find it at the directory below (varies based on system, region and configuration):
 
-    var/lib/hakchi/games/snes-usa/.storage/CLV-O-HNUZA/WINDOWS/
+    NAND: var/lib/hakchi/games/snes-usa/.storage/CLV-O-HNUZA/WINDOWS/
+    USB:  media/hakchi/games/snes-usa/000/CLV-O-HNUZA/WINDOWS/
 
 - When I sync the system using Hakchi2 CE my files aren't updated?
 
