@@ -152,12 +152,13 @@ If you happen to run into this issue just FTP the files to the system.
 
 - Where is the Windows directory located?
 
-> The Windows directory is only visible when Windows (or DOSBox) is
+> The Windows directory may only be visible when Windows (or DOSBox) is
 > running on the system. Uninstalling DOSBox will not delete the Windows installation.
 
-You should be able to find it at the directory below (varies based on region):
+You should be able to find it at the directory below (varies based on system, region and configuration):
 
-    var/lib/hakchi/games/snes-usa/.storage/CLV-O-HNUZA/WINDOWS/
+    NAND: var/lib/hakchi/games/snes-usa/.storage/CLV-O-HNUZA/WINDOWS/
+    USB:  media/hakchi/games/snes-usa/000/CLV-O-HNUZA/WINDOWS/
 
 - When I sync the system using Hakchi2 CE my files aren't updated?
 
@@ -169,7 +170,7 @@ You should be able to find it at the directory below (varies based on region):
 
 Uninstalling Windows is NOT as simple as removing a game from your system, un-checking it in H2CE and then syncing with the system will remove the icon from your system, but not remove the Windows installation.
 
-In order to remove the Windows installation completely and correctly perform the following steps.
+In order to remove the Windows installation completely and correctly, perform the following steps.
 
 ## Step 1.
 
@@ -181,18 +182,23 @@ Sync the changes to the system.
 
 ## Step 3.
 
-Launch Windows. The un-install script will run and remove the Windows folder.
+Launch Windows. 
+The un-install script will run and remove the Install folder, Windows folder and contents.
 
 ## Step 4.
 
 You may now un-install Windows through H2CE as you would any game/app, by un-checking the box next to it and syncing with your system.
 
-Windows is now fully and properly un-installed! 
+Windows should now be fully and properly un-installed! 
 There may still be some files left behind that H2CE wasn't able to remove, to be sure, ftp into the system and check the following directory. If found, remove it.
 
+NAND:
 > var/lib/hakchi/games/snes-usa/.storage/CLV-O-HNUZA/
 
-I will create a module to automate all of this soon.
+USB:
+> /media/hakchi/games/snes-usa/000/CLV-O-HNUZA
+
+I will create a module (.hmod) to automate all of this soon.
 
 **Please Note:**
 
