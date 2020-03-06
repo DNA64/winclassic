@@ -1,9 +1,9 @@
-  
+
 # winclassic
 Run Microsoft Windows on your Classic Mini!
 
-## How to Install Windows 3.x on your S/NES Classic [ROUGH DRAFT]
-Tutorial by viral_dna
+## How to Install Windows 3.x on your S/NES Classic
+Tutorial written and maintained by viral_dna
 
 Let's skip the "Why?" and move right into the "How?!".
 
@@ -48,14 +48,15 @@ You do NOT require DOS for this guide.
 
 **DO NOT USE THE .IMG FILES!**
 
-For best results mount a folder instead of an .img (More on that below). You'll run into less errors. Checkout the Free [ImDisk Toolkit](https://sourceforge.net/projects/imdisk-toolkit) software. This is a fantastic tool that will let you mount HDD and floppy image files with ease. 
+For best results mount a folder instead of an .img (More on that below). Checkout the Free [ImDisk Toolkit](https://sourceforge.net/projects/imdisk-toolkit) software. This is a fantastic tool that will let you mount HDD and floppy image files with ease. 
 
-You can use it to extract the setup files you'll need from the Windows 3.x installation disk images.
+You can use it to extract the setup files you'll need from each of the Windows 3.x installation disk images. Copy the extracted files from each disk into a new folder labeled "INSTALL" (The files from all 6 installation disks should be extracted into the INSTALL folder, not to individual folders).
 
 **ATTENTION!!!**
 
-*When un-installing windows you MUST use the un-installation guide below. Hakchi2 CE isn't capable of uninstalling Windows and although the icon will disappear and you won't see the files, they will remain on the system taking up space!*
+*When un-installing windows you MUST use the un-installation guide below. Hakchi2 CE isn't capable of uninstalling Windows by default and although the icon will disappear and you won't see the files, they will remain on the system taking up space!*
 
+# Installation
 
 ## Step 1
 
@@ -118,7 +119,7 @@ We're almost done, we just need to remove the INSTALL folder and replace the `do
     
 If needed select the Windows 3.x program in your H2CE apps list again and press `F4` to locate the `INSTALL` folder and delete it. Then locate the `dosbox.conf` file and replace it with the one from the "run" folder on the github page.
 
-  For Example:
+  **For Example:**
   If you have a North American SNES Classic and are **DONE** installing Windows to the **NAND**, you would download the following dosbox.conf file...  
   https://github.com/DNA64/winclassic/tree/master/DOSBox%20Configs/snes/usa/nand/run/dosbox.conf
   
@@ -163,18 +164,26 @@ You should be able to find it at the directory below (varies based on system, re
 - When I sync the system using Hakchi2 CE my files aren't updated?
 
 > This drove me crazy when I was testing things. I found transferring
->  files over ftp more reliable.
+>  files over ftp more reliable. Just remember, any future syncs may remove files ftp'd over and cause issues if you don't re-copy them again after syncing.
+
+- Getting errors using a USB drive?
+
+Aside from the typical issues one might face, if you have installed windows to your system and have placed it into a folder, at this time you'll need to manually edit the dosbox.conf files with the proper destination address. This will be fixed in a future update. Just change the part in bold below in the dosbox.conf files to match the proper destination on your USB drive: 
+"/media/hakchi/games/snes-usa/**000**/CLV-O-HNUZA"
 
 
 # Uninstalling Windows
 
-Uninstalling Windows is NOT as simple as removing a game from your system, un-checking it in H2CE and then syncing with the system will remove the icon from your system, but not remove the Windows installation.
+Uninstalling Windows is NOT as simple as removing a game from your system. Un-checking it in H2CE and then syncing with the system will remove the icon from your system, but not remove the Windows installation.
 
 In order to remove the Windows installation completely and correctly, perform the following steps.
 
 ## Step 1.
 
-Select the Windows 3.x program in your H2CE apps list again and press `F4` to locate the `dosbox.conf` file and replace it with the one from the "Un-install" folder on the github page.
+Select the Windows 3.x program in your H2CE apps list again and press `F4` to locate the `dosbox.conf` file and replace it (Drag & Drop) with one from the appropriate "Un-install" folder on the github page.
+
+*For example, if you have a North American SNES Classic and installed Windows to a USB drive, you would use:*
+ `DOSBox Configs/snes/usa/usb/un-install/dosbox.conf`
 
 ## Step 2.
 
@@ -182,15 +191,15 @@ Sync the changes to the system.
 
 ## Step 3.
 
-Launch Windows. 
-The un-install script will run and remove the Install folder, Windows folder and contents.
+Launch the Windows Icon on your classic. 
+The un-install script will run and remove the Installation and any related items.
 
 ## Step 4.
 
 You may now un-install Windows through H2CE as you would any game/app, by un-checking the box next to it and syncing with your system.
 
 Windows should now be fully and properly un-installed! 
-There may still be some files left behind that H2CE wasn't able to remove, to be sure, ftp into the system and check the following directory. If found, remove it.
+Just to be sure, you can always ftp into the system using Hakchi2 CE (Tools > Open FTP Client) and check the following directory (Below). If found, you may safely remove it and any contents.
 
 NAND:
 > var/lib/hakchi/games/snes-usa/.storage/CLV-O-HNUZA/
