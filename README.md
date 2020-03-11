@@ -1,14 +1,15 @@
+
 # winclassic
 Run Microsoft Windows on your Classic Mini!
 
 **Table of contents:**
- - How to Install Windows 3.x on your NES, SNES & SEGA Classic!
- - How to Install Windows 3.x on your PlayStation Classic with Project Eris
- - Windows 3.x Installation
- - Troubleshooting Windows 3.x
- - Un-installing Windows 3.x
- - Migrating your installation to another system
- - Installing other operating systems
+ - [How to Install Windows 3.x on your NES, SNES & SEGA Classic!](https://github.com/DNA64/winclassic/blob/master/README.md#how-to-install-windows-3x-on-your-nes-snes--sega-classic)
+ - [How to Install Windows 3.x on your PlayStation Classic with Project Eris](https://github.com/DNA64/winclassic#how-to-install-windows-3x-on-your-playstation-classic-with-project-eris)
+ - [Windows 3.x Installation](https://github.com/DNA64/winclassic#windows-3x-installation)
+ - [Troubleshooting Windows 3.x](https://github.com/DNA64/winclassic#troubleshooting-windows-3x)
+ - [Un-installing Windows 3.x](https://github.com/DNA64/winclassic#uninstalling-windows-3x)
+ - [Migrating your installation to another system](https://github.com/DNA64/winclassic#migrating-your-installation-to-another-system)
+ - [Installing other operating systems](https://github.com/DNA64/winclassic#installing-other-operating-systems)
 
 
 # How to Install Windows 3.x on your NES, SNES & SEGA Classic!
