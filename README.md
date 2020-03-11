@@ -1,8 +1,17 @@
-
 # winclassic
 Run Microsoft Windows on your Classic Mini!
 
-## How to Install Windows 3.x on your S/NES Classic
+**Table of contents:**
+ - How to Install Windows 3.x on your NES, SNES & SEGA Classic!
+ - How to Install Windows 3.x on your PlayStation Classic with Project Eris
+ - Windows 3.x Installation
+ - Troubleshooting Windows 3.x
+ - Un-installing Windows 3.x
+ - Migrating your installation to another system
+ - Installing other operating systems
+
+
+# How to Install Windows 3.x on your NES, SNES & SEGA Classic!
 Tutorial written and maintained by viral_dna
 
 Let's skip the "Why?" and move right into the "How?!".
@@ -14,7 +23,7 @@ Let's skip the "Why?" and move right into the "How?!".
 
 **Pre-requisites:** 
 
-First and foremost this guide requires and assumes you have a modded S/NES Classic and already have the [latest build of Hakchi2 CE](https://github.com/TeamShinkansen/Hakchi2-CE/releases/latest). 
+First and foremost this guide requires and assumes you have a modded NES, SNES or SEGA Classic and already have the [latest build of Hakchi2 CE](https://github.com/TeamShinkansen/Hakchi2-CE/releases/latest). 
 (Tested on Hakchi2 CE 3.5.3 and 3.7) 
 
 You'll also need a OTG adapter of some sort, and Keyboard and Mouse. Though the mouse is optional, it will make the process much easier. 
@@ -40,7 +49,7 @@ If you have a North American SNES Classic and are installing Windows to the NAND
 
 https://github.com/DNA64/winclassic/tree/master/DOSBox%20Configs/snes/usa/nand/install/dosbox.conf
 
-Make sure you download the file that matches your systems region and configuration (NAND or USB).
+Make sure you download the file that matches your system, region and configuration (NAND or USB).
 
 You'll also need a copy of Windows 3.x, Obviously for legal reasons I cannot link to these, so you'll have to find those on your own. Windows 3.x comes on six 1.44mb floppy disks. You can find some on ebay if you like. 
 
@@ -56,7 +65,11 @@ You can use it to extract the setup files you'll need from each of the Windows 3
 
 *When un-installing windows you MUST use the un-installation guide below. Hakchi2 CE isn't capable of uninstalling Windows by default and although the icon will disappear and you won't see the files, they will remain on the system taking up space!*
 
-# Installation
+# How to Install Windows 3.x on your PlayStation Classic with Project Eris
+
+If you're looking for a guide to install Windows on the PlayStation Classic using Project Eris, I will have a guide up soon, it's really simple!
+
+# Windows 3.x Installation
 
 ## Step 1
 
@@ -130,7 +143,7 @@ Now when you launch Windows 3.x from your home menu you should boot right into W
 The End.. or is it? 
 More exciting things to follow! ;)
 
-# Troubleshooting
+# Troubleshooting Windows 3.x
 
 - If the Windows setup doesn't start automatically in Step 3 simply type `setup` at the command prompt and press enter.
 
@@ -172,7 +185,7 @@ Aside from the typical issues one might face, if you have installed windows to y
 "/media/hakchi/games/snes-usa/**000**/CLV-O-HNUZA"
 
 
-# Uninstalling Windows
+# Uninstalling Windows 3.x
 
 Uninstalling Windows is NOT as simple as removing a game from your system. Un-checking it in H2CE and then syncing with the system will remove the icon from your system, but not remove the Windows installation.
 
@@ -214,3 +227,16 @@ I will create a module (.hmod) to automate all of this soon.
 At this point, it's recommended you right click on Windows in the H2CE list and delete it.
 
 You may leave it if you like, however, in order to install windows again, you will need to add the Windows Setup files to the INSTALL folder again (NAND users only) and the appropriate `dosbox.conf` file from the github repo, essentially following the guide above again (You can skip Step 2).
+
+# Migrating your installation to another system
+
+If you've already installed Windows 3.x to one of your systems and want to do the same for another system, the process is about as simple as copying the Windows directory to the new system.
+
+# Installing other operating systems
+
+Windows 3.x isn't the only OS you can run on these systems. Aside from DOS and Windows 3.x I've also run Windows 95 and 98, and am working on several others, including something quite impressive. I will update this page with more supported Operating Systems and details as I complete testing and work on the guides. Obviously due to hardware limitations there are some performance issues running the newer stuff, and the PlayStation Classic is the best system to play around with this stuff.
+
+Stay tuned for more info as I continue to work on and update this page.
+
+Cheers!
+viral_dna
